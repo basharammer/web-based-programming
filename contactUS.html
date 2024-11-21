@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; 
+            color: rgba(172, 255, 47, 0.795); 
+        }
+        .top {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+        h1 {
+            text-align: center;
+            color: rgba(172, 255, 47, 0.795); 
+        }
+        .contact-details {
+            align-items: center;
+            margin-top: 30px;
+        }
+        .contact-details p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #222; 
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #333; 
+            color: rgba(172, 255, 47, 0.795); 
+            font-size: 0.4cm;
+        }
+        .contact-form button {
+            padding: 12px 20px;
+            background-color: rgba(172, 255, 47, 0.795); ;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.7cm;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top">
+        <h1>Contact Us</h1>
+
+        <p class="contact-details">
+            We'd love to hear from you! If you have any questions, comments, or concerns, please reach out to us.
+        </p>
+     
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="ThankYou.html" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>Thank you for contacting us! We'll get back to you shortly.</p>
+            <p>Your information will be kept confidential and used only for communication purposes.</p>
+        </div>
+    </div>
+
+</body>
+</html>
